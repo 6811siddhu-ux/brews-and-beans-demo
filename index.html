@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coffee House</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#17120f;color:#fff}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;background:#211813}
+.logo{font-size:25px;color:#d6a56d;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:18px}
+.hero{min-height:480px;display:flex;align-items:center;padding:60px 9%;background:linear-gradient(90deg,#17120f 10%,#17120fbb),url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1400') center/cover}
+.hero h1{font-size:48px;margin-bottom:18px}
+.hero p{color:#ddd;line-height:1.7;margin-bottom:25px}
+.btn{display:inline-block;background:#c58a52;color:#17120f;padding:13px 25px;text-decoration:none;border-radius:5px;font-weight:bold}
+section{padding:65px 8%;text-align:center}
+h2{color:#d6a56d;font-size:32px;margin-bottom:30px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.item{background:#2a211b;padding:25px;border-radius:10px}
+.item h3{margin:12px 0;color:#e6b77e}
+.item p{color:#ccc}
+.price{color:#e6b77e;margin-top:12px;font-weight:bold}
+.about p,.contact p{color:#ddd;line-height:1.8;max-width:650px;margin:auto}
+footer{background:#211813;text-align:center;padding:22px;color:#ccc}
+@media(max-width:600px){header{flex-direction:column;gap:15px}nav a{margin:0 7px;font-size:13px}.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">☕ THE COFFEE HOUSE</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div>
+<h1>Fresh Coffee,<br>Happy Moments.</h1>
+<p>Experience the perfect taste of coffee<br>in a warm and welcoming atmosphere.</p>
+<a class="btn" href="#menu">Explore Our Menu</a>
+</div>
+</div>
+
+<section id="menu">
+<h2>Our Popular Menu</h2>
+<div class="menu">
+<div class="item"><h3>☕ Cappuccino</h3><p>Rich espresso with creamy milk foam.</p><div class="price">₹149</div></div>
+<div class="item"><h3>☕ Cold Coffee</h3><p>Chilled and refreshing coffee.</p><div class="price">₹129</div></div>
+<div class="item"><h3>🍫 Chocolate Cake</h3><p>Delicious and freshly made cake.</p><div class="price">₹99</div></div>
+<div class="item"><h3>🥪 Sandwich</h3><p>Fresh and tasty grilled sandwich.</p><div class="price">₹119</div></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About Our Cafe</h2>
+<p>Welcome to The Coffee House! We serve freshly prepared coffee, delicious snacks and memorable experiences. Visit us and enjoy every moment.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Visit Us</h2>
+<p>Come and enjoy your favourite coffee with us!</p>
+<p>📍 Your Cafe Address, Your City</p>
+<p>📞 +91 9876543210</p>
+</section>
+
+<footer>© 2026 The Coffee House | All Rights Reserved</footer>
+</body>
+</html>
